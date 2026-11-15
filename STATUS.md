@@ -2,9 +2,9 @@
 type: project
 project: 拾光相册
 status: 进行中
-phase: GitHub 主分支源码及独立使用说明已推送，正在上传 0.3.3 Release 附件
-next: 核对全部 Release 附件大小与 SHA-256 后公开发布；Mac/iOS/鸿蒙原生编译、签名及真机验证仍待后续
-updated: 2026-11-15 22:38
+phase: GitHub 0.3.3 源码、各版本现状、独立使用说明及 20 个 Release 附件已公开发布
+next: Mac 启动/签名验证、Xcode 编译 iOS、DevEco 编译鸿蒙及权限申请；继续各平台真机核验，不把预览或工程当作已验收安装包
+updated: 2026-11-15 22:44
 tags:
   - project
 ---
@@ -30,6 +30,8 @@ tags:
 | 真机验证 | 用户已反馈旧版分类未实际移回；0.3.0 Android 迁移和触摸仍待 Civi 4 Pro 实测。小米相册最近删除展示问题尚不能宣称解决 |
 
 ## 最近进展
+
+- 2026-11-15 22:44：已完成发布至 https://github.com/fei33fei/shiguang 。主分支保存源码、各平台工程、构建脚本、README 版本现状表与独立用户说明；v0.3.3 预发布公开 20 个附件，合计约 471.8 MiB。逐项核对远端名称、uploaded 状态、字节大小及 GitHub SHA-256，全部与本地一致；小米原版保留包校验不变。发布页为 https://github.com/fei33fei/shiguang/releases/tag/v0.3.3 。使用用户完成的标准 GitHub CLI 网页授权，未上传私钥、密码、SDK、依赖或测试临时数据。Mac/iOS/鸿蒙的原生验收状态保持原样，未宣称因上传仓库而完成适配。
 
 - 2026-11-15 22:38：GitHub main 已推送，保留仓库初始历史。README 现状表与独立《使用说明.md》已上线，GitHub CLI 由用户完成标准网页授权；准备 20 个 Release 附件，包含两种 APK（小米原版单独备注）、两种 Windows EXE、Mac 双架构预览、iOS/鸿蒙工程、全平台源码、文档与校验清单。安装包不塞入 Git 历史，签名材料不上传。
 
