@@ -2,9 +2,9 @@
 type: project
 project: 拾光相册
 status: 进行中
-phase: 0.3.3 源码与独立使用说明整理完毕，正在发布到 GitHub shiguang 仓库
-next: 完成 GitHub 主分支推送及 Release 附件上传和校验；Mac/iOS/鸿蒙的原生编译、签名与真机验证仍待后续
-updated: 2026-11-15 22:33
+phase: GitHub 主分支源码及独立使用说明已推送，正在上传 0.3.3 Release 附件
+next: 核对全部 Release 附件大小与 SHA-256 后公开发布；Mac/iOS/鸿蒙原生编译、签名及真机验证仍待后续
+updated: 2026-11-15 22:38
 tags:
   - project
 ---
@@ -30,6 +30,8 @@ tags:
 | 真机验证 | 用户已反馈旧版分类未实际移回；0.3.0 Android 迁移和触摸仍待 Civi 4 Pro 实测。小米相册最近删除展示问题尚不能宣称解决 |
 
 ## 最近进展
+
+- 2026-11-15 22:38：GitHub main 已推送，保留仓库初始历史。README 现状表与独立《使用说明.md》已上线，GitHub CLI 由用户完成标准网页授权；准备 20 个 Release 附件，包含两种 APK（小米原版单独备注）、两种 Windows EXE、Mac 双架构预览、iOS/鸿蒙工程、全平台源码、文档与校验清单。安装包不塞入 Git 历史，签名材料不上传。
 
 - 2026-11-15 22:33：按用户要求准备完整源码、平台工程、用户使用说明和交付文件上传至 fei33fei/shiguang。README 重写为各版本当前交付和验证状态，使用方式放在独立说明；安装包计划在同仓库 Releases 发布，原版小米 0.3.3 单独保留。Git 连接既有 main 历史；签名私钥、密码、SDK、依赖和测试临时数据排除，8 项核心测试通过。发布附件需要标准 GitHub CLI 网页授权。
 
