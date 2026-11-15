@@ -1,0 +1,4 @@
+const fs=require('node:fs/promises'),path=require('node:path');
+async function moveExclusive(source,destination){if(path.resolve(source)===path.resolve(destination))return;await fs.mkdir(path.dirname(destination),{recursive:true});const stat=await fs.stat(source);await fs.copyFile(source,destination,require('node:fs').constants.COPYFILE_EXCL);try{await fs.utimes(destination,stat.atime,stat.mtime);await fs.unlink(source);}catch(e){await fs.unlink(destination).catch(()=>{});throw e;}}
+async function uniquePath(directory,name){let candidate=path.join(directory,name),n=1;const ext=path.extname(name),base=path.basename(name,ext);while(true){try{await fs.access(candidate);candidate=path.join(directory,`${base} (${n++})${ext}`);}catch(e){if(e.code==='ENOENT')return candidate;throw e;}}}
+module.exports={moveExclusive,uniquePath};

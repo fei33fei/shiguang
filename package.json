@@ -1,0 +1,60 @@
+{
+  "name": "shiguang-album",
+  "version": "0.3.3",
+  "description": "拾光 · 本地相册整理",
+  "author": "Shiguang",
+  "private": true,
+  "main": "desktop/main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test tests/*.test.cjs",
+    "dist:win": "electron-builder --win nsis --x64",
+    "dist:mac": "electron-builder --mac zip --x64 --arm64",
+    "prepare:mobile": "node scripts/prepare-mobile.cjs",
+    "dist:mac:cross": "node scripts/package-mac.cjs",
+    "dist:source": "node scripts/export-source.cjs"
+  },
+  "devDependencies": {
+    "electron": "^45.3.2",
+    "electron-builder": "^26.0.12",
+    "playwright": "^1.65.1",
+    "plist": "^3.1.0",
+    "yauzl": "^3.4.0",
+    "yazl": "^3.3.1"
+  },
+  "build": {
+    "appId": "local.shiguang.album",
+    "productName": "拾光相册",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "web/**/*",
+      "desktop/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": "nsis",
+      "signAndEditExecutable": false
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "artifactName": "Shiguang-Setup-${version}.${ext}"
+    },
+    "mac": {
+      "target": [
+        "zip"
+      ],
+      "category": "public.app-category.photography",
+      "identity": null,
+      "hardenedRuntime": false,
+      "gatekeeperAssess": false,
+      "artifactName": "Shiguang-macOS-${version}-${arch}.${ext}"
+    }
+  },
+  "dependencies": {
+    "exifr": "^7.1.3"
+  }
+}

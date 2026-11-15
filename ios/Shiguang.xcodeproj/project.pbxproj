@@ -1,0 +1,22 @@
+// !$*UTF8*$!
+{archiveVersion = 1; classes = {}; objectVersion = 56; objects = {
+000000000000000000000001 = {isa = PBXProject; attributes = {LastUpgradeCheck = 1600;}; buildConfigurationList = 000000000000000000000020; compatibilityVersion = "Xcode 14.0"; developmentRegion = zh_CN; hasScannedForEncodings = 0; knownRegions = (en,zh_CN,Base); mainGroup = 000000000000000000000002; productRefGroup = 000000000000000000000003; projectDirPath = ""; projectRoot = ""; targets = (000000000000000000000004);};
+000000000000000000000002 = {isa = PBXGroup; children = (000000000000000000000005,000000000000000000000006,000000000000000000000007,000000000000000000000003); sourceTree = "<group>";};
+000000000000000000000003 = {isa = PBXGroup; name = Products; children = (000000000000000000000008); sourceTree = "<group>";};
+000000000000000000000004 = {isa = PBXNativeTarget; buildConfigurationList = 000000000000000000000021; buildPhases = (000000000000000000000010,000000000000000000000011,000000000000000000000012); buildRules = (); dependencies = (); name = Shiguang; productName = Shiguang; productReference = 000000000000000000000008; productType = "com.apple.product-type.application";};
+000000000000000000000005 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shiguang/App.swift; sourceTree = "<group>";};
+000000000000000000000006 = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Shiguang/Info.plist; sourceTree = "<group>";};
+000000000000000000000007 = {isa = PBXFileReference; lastKnownFileType = folder; path = Shiguang/Resources/web; sourceTree = "<group>";};
+000000000000000000000008 = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shiguang.app; sourceTree = BUILT_PRODUCTS_DIR;};
+000000000000000000000009 = {isa = PBXBuildFile; fileRef = 000000000000000000000005;};
+000000000000000000000013 = {isa = PBXBuildFile; fileRef = 000000000000000000000007;};
+000000000000000000000010 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (000000000000000000000009); runOnlyForDeploymentPostprocessing = 0;};
+000000000000000000000011 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0;};
+000000000000000000000012 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (000000000000000000000013); runOnlyForDeploymentPostprocessing = 0;};
+000000000000000000000020 = {isa = XCConfigurationList; buildConfigurations = (000000000000000000000022,000000000000000000000023); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release;};
+000000000000000000000021 = {isa = XCConfigurationList; buildConfigurations = (000000000000000000000024,000000000000000000000025); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release;};
+000000000000000000000022 = {isa = XCBuildConfiguration; name = Debug; buildSettings = {CLANG_ENABLE_MODULES = YES; IPHONEOS_DEPLOYMENT_TARGET = 16.0; SDKROOT = iphoneos; SWIFT_VERSION = 5.0; SWIFT_OPTIMIZATION_LEVEL = "-Onone";};};
+000000000000000000000023 = {isa = XCBuildConfiguration; name = Release; buildSettings = {CLANG_ENABLE_MODULES = YES; IPHONEOS_DEPLOYMENT_TARGET = 16.0; SDKROOT = iphoneos; SWIFT_VERSION = 5.0; SWIFT_OPTIMIZATION_LEVEL = "-O";};};
+000000000000000000000024 = {isa = XCBuildConfiguration; name = Debug; buildSettings = {CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 8; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = Shiguang/Info.plist; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks"; MARKETING_VERSION = 0.3.3; PRODUCT_BUNDLE_IDENTIFIER = local.shiguang.album; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; TARGETED_DEVICE_FAMILY = "1,2"; SWIFT_EMIT_LOC_STRINGS = YES;};};
+000000000000000000000025 = {isa = XCBuildConfiguration; name = Release; buildSettings = {CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 8; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = Shiguang/Info.plist; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks"; MARKETING_VERSION = 0.3.3; PRODUCT_BUNDLE_IDENTIFIER = local.shiguang.album; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; TARGETED_DEVICE_FAMILY = "1,2"; SWIFT_EMIT_LOC_STRINGS = YES;};};
+}; rootObject = 000000000000000000000001;}

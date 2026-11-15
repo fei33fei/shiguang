@@ -1,0 +1,34 @@
+name: Apple builds and validation
+on: workflow_dispatch
+permissions:
+  contents: read
+jobs:
+  mac:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm run dist:mac
+        env:
+          CSC_IDENTITY_AUTO_DISCOVERY: 'false'
+      - uses: actions/upload-artifact@v4
+        with:
+          name: macOS-unsigned-0.3.3
+          path: release/Shiguang-macOS-*.zip
+  ios-simulator:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: bash ios/build.sh simulator
+      - uses: actions/upload-artifact@v4
+        with:
+          name: iOS-simulator-0.3.3-not-for-iPhone-install
+          path: ios/build/Build/Products/Debug-iphonesimulator/Shiguang.app

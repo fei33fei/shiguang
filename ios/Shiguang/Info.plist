@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+<key>CFBundleDisplayName</key><string>拾光相册</string>
+<key>CFBundleIdentifier</key><string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+<key>CFBundleExecutable</key><string>$(EXECUTABLE_NAME)</string>
+<key>CFBundleName</key><string>Shiguang</string>
+<key>CFBundlePackageType</key><string>APPL</string>
+<key>CFBundleShortVersionString</key><string>0.3.3</string>
+<key>CFBundleVersion</key><string>8</string>
+<key>LSRequiresIPhoneOS</key><true/>
+<key>UILaunchScreen</key><dict/>
+<key>UISupportedInterfaceOrientations</key><array><string>UIInterfaceOrientationPortrait</string><string>UIInterfaceOrientationLandscapeLeft</string><string>UIInterfaceOrientationLandscapeRight</string></array>
+<key>NSPhotoLibraryUsageDescription</key><string>拾光仅在本机查看和整理你允许的照片与视频，不上传；分类会修改系统相册成员关系，清理需系统确认。</string>
+<key>NSPhotoLibraryAddUsageDescription</key><string>用于在本机照片图库中创建整理相册并添加你选择的照片。</string>
+<key>PHPhotoLibraryPreventAutomaticLimitedAccessAlert</key><true/>
+</dict></plist>

@@ -1,0 +1,2 @@
+a7dc31f0c4b24c00308402971271bb41a1c12ff079c32d4f16272fbbe515d65b  Shiguang-Setup-0.3.3.exe
+79822626d18e17e16f98121342a9de1c1db3cc540f1951605c69da6dc284a65f  Shiguang-Android-0.3.3（小米civi4专属apk）.apk

@@ -1,0 +1,7 @@
+3403b52aec7e5502e82e9d9549977f9f7e3464854b0a9416a2fb7010bca0dff1  Shiguang-Android-0.3.3-universal.apk
+929328771cbc8a4f19e8f2e1b652f992046dc1bd7bc51d6ea50f881520c16c27  Shiguang-Setup-0.3.3-multiplatform.exe
+ddefe8d5f8bfc0f0d022ab49fb71d1d3802491207a753ecdfdf488cd455a5e59  Shiguang-macOS-0.3.3-arm64-unsigned.zip
+d4eb0f1655a58c5bb0f5bfb7da9fc7633f7358caf2433f5f1bb2a5a275c95238  Shiguang-macOS-0.3.3-x64-unsigned.zip
+72fad0bf5ffeda6ab8f18e7655ff9e54f6118e7512e81fadf4c81a43e48009e3  Shiguang-iOS-0.3.3-source.zip
+eb3a3233d2781e10039863a0d9eeb86a411208840f38be87a6dc797e14903be6  Shiguang-HarmonyNEXT-0.3.3-source.zip
+8cd814d8b3533b3cb1c5536b2355362da2106bdd794697c2ff24915d610c0a2b  Shiguang-0.3.3-platform-sources.zip
