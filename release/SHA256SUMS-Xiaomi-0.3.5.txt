@@ -1,0 +1,3 @@
+8adfb31a07a9aa15a02cdd1ec22501ddb14000c37b19418d23afe5f421307fda  Shiguang-Android-0.3.5-Xiaomi-Civi4.apk
+348a6c7e6bdc034ffd8b2d8dde8adf3bf74131f23995da7e6a2f9012a967b01c  Shiguang-Xiaomi-0.3.5-source.zip
+92e58fd9a5ccb671e6de4a9c088d4a54fcd2241ad7158da8e0086708cdd8be01  Shiguang-Xiaomi-0.3.5-Guide.md

@@ -8,6 +8,7 @@
 
 | 版本 / 平台 | 当前交付 | 验证情况与待办 |
 | --- | --- | --- |
+| **小米专属 0.3.5（新版）** | [APK](https://github.com/fei33fei/shiguang/releases/download/xiaomi-v0.3.5/Shiguang-Android-0.3.5-Xiaomi-Civi4.apk) · [本版说明](variants/xiaomi/README.md) | 批量归档、扫描本地拾光分类、特殊字符名称、视频页手势、排序布局及 GitHub 更新；已编译并通过界面模拟，长期权限和系统安装待真机复测 |
 | **小米 Civi 4 专属保留版 · 0.3.3** | [小米civi4专属apk](https://github.com/fei33fei/shiguang/releases/download/v0.3.3/Shiguang-Android-0.3.3-Xiaomi-Civi4.apk) | 保留多平台适配前的原版 APK，仅增加文件备注，内容和签名不变；小米相册“最近删除”的展示差异仍存在，不能宣称已解决 |
 | **通用 Android 11+ · 0.3.3** | [通用 APK](https://github.com/fei33fei/shiguang/releases/download/v0.3.3/Shiguang-Android-0.3.3-universal.apk) | 内部版本码 8；已编译、签名并通过共用界面回归，去除小米相册包名依赖；其他品牌权限、解码及回收行为仍待真机验证 |
 | **Windows 11 x64 · 0.3.3** | [适配版 EXE](https://github.com/fei33fei/shiguang/releases/download/v0.3.3/Shiguang-Setup-0.3.3-multiplatform.exe) · [原版 EXE](https://github.com/fei33fei/shiguang/releases/download/v0.3.3/Shiguang-Setup-0.3.3.exe) | 已生成安装包；样例文件移动、两次回退、删除分类归还、回收站与打包程序启动测试通过；未使用商业代码签名 |

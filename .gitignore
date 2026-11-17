@@ -7,6 +7,7 @@ release/*
 release/platforms/*
 !release/platforms/*.md
 android/build/
+variants/xiaomi/android/build/
 android/signing/
 test-results/
 ios/build/
