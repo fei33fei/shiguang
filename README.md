@@ -2,15 +2,15 @@
 
 整理本机照片、动图和视频的小工具。按时间浏览，从“待整理”开始分类；支持瀑布流缩放、左右对比、上滑待删除和最近两次整理操作回退。无账号、云存储、广告、订阅或社交广场，各设备独立保存整理进度。
 
-后续仅维护 **安卓通用版** 和 **小米 Civi 4 专属版**，两者现为 **0.3.6**。Windows、Mac、iPhone、鸿蒙仅保留历史代码和产物，不再继续更新适配。以下区分已生成的安装包、未签名预览包和仍待编译的原生工程，不把界面模拟通过当作真机适配完成。
+后续仅维护 **安卓通用版** 和 **小米 Civi 4 专属版**，两者现为 **0.3.7**。Windows、Mac、iPhone、鸿蒙仅保留历史代码和产物，不再继续更新适配。以下区分已生成的安装包、未签名预览包和仍待编译的原生工程，不把界面模拟通过当作真机适配完成。
 
 ## 各版本现状
 
 | 版本 / 平台 | 当前交付 | 验证情况与待办 |
 | --- | --- | --- |
-| **小米专属 0.3.6（新版）** | [APK](https://github.com/fei33fei/shiguang/releases/download/android-v0.3.6/Shiguang-Android-0.3.6-Xiaomi-Civi4.apk) · [本版说明](variants/xiaomi/README.md) | 批量归档、扫描本地拾光分类、特殊字符名称、视频页手势、排序布局及 GitHub 更新；已编译并通过界面模拟，长期权限和系统安装待真机复测 |
+| **小米专属 0.3.7（新版）** | [APK](https://github.com/fei33fei/shiguang/releases/download/android-v0.3.7/Shiguang-Android-0.3.7-Xiaomi-Civi4.apk) · [本版说明](variants/xiaomi/README.md) | 批量归档、扫描本地拾光分类、特殊字符名称、视频页手势、排序布局及 GitHub 更新；已编译并通过界面模拟，长期权限和系统安装待真机复测 |
 | **小米 Civi 4 专属保留版 · 0.3.3** | [小米civi4专属apk](https://github.com/fei33fei/shiguang/releases/download/v0.3.3/Shiguang-Android-0.3.3-Xiaomi-Civi4.apk) | 保留多平台适配前的原版 APK，仅增加文件备注，内容和签名不变；小米相册“最近删除”的展示差异仍存在，不能宣称已解决 |
-| **通用 Android 11+ · 0.3.6** | [通用 APK](https://github.com/fei33fei/shiguang/releases/download/android-v0.3.6/Shiguang-Android-0.3.6-universal.apk) · [本版说明](variants/android-universal/README.md) | 内部版本码 12；同步小米 0.3.6 功能，使用通用相册和权限入口，检查更新只选通用包；已编译签名和界面回归，各厂商权限/解码/安装仍待真机验证 |
+| **通用 Android 11+ · 0.3.7** | [通用 APK](https://github.com/fei33fei/shiguang/releases/download/android-v0.3.7/Shiguang-Android-0.3.7-universal.apk) · [本版说明](variants/android-universal/README.md) | 内部版本码 13；同步小米 0.3.7 功能，使用通用相册和权限入口，检查更新只选通用包；已编译签名和界面回归，各厂商权限/解码/安装仍待真机验证 |
 | **Windows 11 x64 · 0.3.3** | [适配版 EXE](https://github.com/fei33fei/shiguang/releases/download/v0.3.3/Shiguang-Setup-0.3.3-multiplatform.exe) · [原版 EXE](https://github.com/fei33fei/shiguang/releases/download/v0.3.3/Shiguang-Setup-0.3.3.exe) | 已生成安装包；样例文件移动、两次回退、删除分类归还、回收站与打包程序启动测试通过；未使用商业代码签名 |
 | **Mac Apple Silicon · 0.3.3** | [arm64 未签名预览 ZIP](https://github.com/fei33fei/shiguang/releases/download/v0.3.3/Shiguang-macOS-0.3.3-arm64-unsigned.zip) | 已生成应用归档并核对结构、执行权限及框架链接；未在 Mac 启动、签名或公证，需继续验证 |
 | **Mac Intel · 0.3.3** | [x64 未签名预览 ZIP](https://github.com/fei33fei/shiguang/releases/download/v0.3.3/Shiguang-macOS-0.3.3-x64-unsigned.zip) | 与上项相同；整理普通目录，不直接修改 Apple 照片图库包 |

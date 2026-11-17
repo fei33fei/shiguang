@@ -19,3 +19,5 @@ body:has(dialog[open]){overflow:hidden}
 #manageList .manage-row{flex-wrap:wrap}#manageList .manage-row>span{flex-basis:40%;min-width:0}.album-sort{display:flex;align-items:center;gap:8px;width:100%}.album-sort small{flex:1;color:var(--muted)}.album-sort button{min-height:40px;min-width:64px}
 
 #manageList .manage-row>span{flex-basis:100%}.album-sort{display:contents}.album-sort small{display:none}#manageList .manage-row button{height:36px;min-height:36px;min-width:0;flex:1;padding:5px;font-size:11px}.card.selected{outline:4px solid #45694d;outline-offset:-4px}#batchFolderList{display:flex;flex-wrap:wrap;gap:8px}#batchTools{padding:10px}#settingsDialog p{font-size:12px}
+
+#batchToggle,#systemTrash{height:36px;box-sizing:border-box;font-size:11px;line-height:normal;padding:8px 15px;vertical-align:top}

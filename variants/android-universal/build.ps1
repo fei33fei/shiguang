@@ -28,7 +28,7 @@ if (!(Test-Path $keyPath)) {
     [System.IO.File]::WriteAllText($passwordPath,$keyPassword)
     Run-Checked "$jdkPath\bin\keytool.exe" @('-genkeypair','-keystore',$keyPath,'-storepass:file',$passwordPath,'-keypass:file',$passwordPath,'-alias','shiguang','-keyalg','RSA','-keysize','3072','-validity','10000','-dname','CN=Shiguang Local Album')
 }
-$apk = "$projectRoot\release\Shiguang-Android-0.3.6-universal.apk"
+$apk = "$projectRoot\release\Shiguang-Android-0.3.7-universal.apk"
 Run-Checked "$buildTools\apksigner.bat" @('sign','--ks',$keyPath,'--ks-key-alias','shiguang','--ks-pass',"file:$passwordPath",'--out',$apk,"$outputPath\aligned.apk")
 Run-Checked "$buildTools\apksigner.bat" @('verify','--verbose',$apk)
 Write-Output "APK ready: $apk"

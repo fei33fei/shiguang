@@ -1,0 +1,4 @@
+6cfc72fd190c389d0c80768a0ad46c44880012597f279192ecd8cb35706632e3  Shiguang-Android-0.3.7-universal.apk
+4af972e7ab519391dc5760c88aeefd13f7937d014ad20c579425201a9ea10680  Shiguang-Android-0.3.7-Xiaomi-Civi4.apk
+37e80c840f5f646e94849b094c4a4a58a60dc6283f1df3cb3c2171149494598e  Shiguang-Android-0.3.7-source.zip
+9a3478dbf3c384adb6b4fb8eb0e9a437b37ca42c9fc558db4b18cc3012460e75  Shiguang-Android-0.3.7-Guide.md
