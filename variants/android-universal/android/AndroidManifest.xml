@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="local.shiguang.album" android:versionCode="11" android:versionName="0.3.5">
+<uses-permission android:name="android.permission.INTERNET"/><uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/><uses-sdk android:minSdkVersion="30" android:targetSdkVersion="35"/>
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32"/>
+<uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+<uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+<uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED"/>
+<uses-permission android:name="android.permission.MANAGE_MEDIA"/>
+<uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION"/>
+<queries><intent><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.APP_GALLERY"/></intent></queries>
+<application android:label="拾光相册" android:icon="@drawable/icon" android:theme="@android:style/Theme.Material.Light.NoActionBar" android:allowBackup="false" android:usesCleartextTraffic="false" android:hardwareAccelerated="true" android:supportsRtl="true">
+<activity android:name=".MainActivity" android:exported="true" android:configChanges="orientation|screenSize|keyboardHidden" android:colorMode="hdr" android:windowSoftInputMode="adjustResize"><intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter></activity>
+<activity android:name=".OriginalActivity" android:exported="false" android:colorMode="hdr"/>
+<activity android:name=".VideoActivity" android:exported="false" android:colorMode="hdr"/>
+<provider android:name=".UpdateProvider" android:authorities="local.shiguang.album.updates" android:exported="false" android:grantUriPermissions="true"/></application></manifest>

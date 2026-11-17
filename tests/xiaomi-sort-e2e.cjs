@@ -13,7 +13,7 @@ const idle=p=>p.waitForFunction(()=>document.body.getAttribute('aria-busy')!=='t
    else throw Error('Unexpected native call: '+method);
   }catch(e){error=e.message;}setTimeout(()=>window.nativeResult(id,result,error),0);}};
  });
- await page.goto('file:///'+path.resolve('variants/xiaomi/web/index.html').replaceAll('\\','/'));await idle(page);
+ await page.goto('file:///'+path.resolve(process.env.SHIGUANG_WEB_DIR||'variants/xiaomi/web','index.html').replaceAll('\\','/'));await idle(page);
  const stored=()=>page.evaluate(()=>JSON.parse(localStorage.getItem('xiaomi-sort-test')));
  const nav=()=>page.locator('#nav button > span:not(.nav-icon)').allTextContents();
  const folderNames=()=>page.locator('#folders button > span:not(.nav-icon)').allTextContents();

@@ -10,7 +10,7 @@ const idle=p=>p.waitForFunction(()=>document.body.getAttribute('aria-busy')!=='t
   else if(method==='checkUpdate')r={available:true,current:'0.3.5',version:'0.3.6'};else if(method==='installUpdate')r=true;else throw Error(method);
   setTimeout(()=>window.nativeResult(id,r,null),0);
  }catch(e){setTimeout(()=>window.nativeResult(id,null,e.message),0);}}};});
- await page.goto('file:///'+path.resolve('variants/xiaomi/web/index.html').replaceAll('\\','/'));await idle(page);
+ await page.goto('file:///'+path.resolve(process.env.SHIGUANG_WEB_DIR||'variants/xiaomi/web','index.html').replaceAll('\\','/'));await idle(page);
  assert.equal(await page.locator('#nav button').filter({hasText:'本地目录'}).count(),1);assert.equal(await page.locator('#nav button').filter({hasText:'空目录'}).count(),1);
  await page.locator('#newAlbum').click();await page.locator('#albumName').fill('风景/人物+精选');await page.locator('#albumForm button[type=submit]').click();await idle(page);
  const album=await page.evaluate(()=>window.data.albums.find(a=>a.name==='风景/人物+精选'));assert.ok(!album.storageName.includes('/'));assert.ok(album.storageName.includes('+'));
